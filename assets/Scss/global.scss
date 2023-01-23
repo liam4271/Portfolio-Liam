@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--beige);
+    overflow: hidden;
+    @include media-max("tablet-down"){
+        overflow: auto;
+        width: auto;
+        height: auto;
+      }
+
+
+}
+html {
+	font-size: 62.5%;
+}
+
+

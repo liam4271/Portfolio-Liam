@@ -1,0 +1,390 @@
+#trailer{
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: var(--bleuVert);
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  text-align: center;
+  .mousseInfos{
+    margin-top: 15px;
+    opacity: 0;
+  }
+}
+
+body:hover > #trailer{
+  opacity: 1;
+}
+
+
+
+.headerAcceuil{
+  margin: 10vh 5vw;
+  display: flex;
+  justify-content: space-between;
+      @include media-max("phone-down"){
+      display: block;
+    }
+  .left{
+    flex-basis: calc(100%/2);
+    position: relative;
+    @include media-max("phone-down"){
+      text-align: center;
+    }
+    img{
+      width: 70%;
+      margin-bottom: 5vh;
+    }
+    p{
+      font-size: 2rem;
+      color: var(--roseChina);
+      font-family: 'secondaryFont';
+      margin-bottom: 3vh;
+      @include media-max("desktop-up"){
+        font-size: 1.5rem;
+      }
+    }
+    h1{
+      display: inline-block;
+      cursor: pointer;
+      font-size: 5rem;
+      color: var(--bleuVert);
+      font-family: 'primaryFont';
+      margin-bottom: 2vh;
+      .surlignage{
+        background: linear-gradient(to top, transparent 20%, #7cc6fe 10.01%, #7CC6FE 50%, transparent 40.01%) no-repeat;
+        background-size: 100% 100%;
+        transition: background-size 0.3s;
+        &:hover{
+          animation: underline 1s both;
+        }
+        }
+        @keyframes underline {
+          from{
+            background-size: 100% 100%;
+            background-position: bottom right;
+          }
+          50%{
+            background-size: 0% 100%;
+            background-position: bottom right;
+          }
+          50.01%{
+            background-size: 0% 100%;
+            background-position: bottom left;
+          }
+          100%{
+            background-size: 100% 100%;
+            background-position: bottom left;
+          }
+        }
+        @include media-max("desktop-up"){
+          font-size: 4rem;
+        }
+        @include media-max("phone-down"){
+          font-size: 3rem;
+        }
+    }
+    h2{
+      display: inline-block;
+      cursor: pointer;
+      font-size: 5rem;
+      color: var(--bleuVert);
+      font-family: 'primaryFont';
+      .surlignage{
+        background: linear-gradient(to top, transparent 20%, #7cc6fe 10.01%, #7CC6FE 50%, transparent 40.01%) no-repeat;
+        background-size: 100% 100%;
+        transition: background-size 0.3s;
+        &:hover{
+          animation: underline 1s both;
+        }
+        }
+        @keyframes underline {
+          from{
+            background-size: 100% 100%;
+            background-position: bottom right;
+          }
+          50%{
+            background-size: 0% 100%;
+            background-position: bottom right;
+          }
+          50.01%{
+            background-size: 0% 100%;
+            background-position: bottom left;
+          }
+          100%{
+            background-size: 100% 100%;
+            background-position: bottom left;
+          }
+        }
+        @include media-max("desktop-up"){
+          font-size: 4rem;
+        }
+        @include media-max("phone-down"){
+          font-size: 3rem;
+        }
+    }
+    .contenaireDefilementTexte{
+      margin: 15vh 0 0 0;
+      background-color: var(--roseChina);
+      overflow: hidden;
+      width: 40%;
+      position: relative;
+      display: flex;
+      border: 1px solid var(--bleuVert);
+      box-shadow: 5px 5px 10px 0px #2a67ac88 ;
+      @include media-max("desktop-up"){
+        width: 50%;
+      }
+      @include media-max("phone-down"){
+        margin: 5vh auto 5vh auto;
+      }
+      marquee{
+        white-space: nowrap;
+        font-size: 3rem;
+        font-family: 'primaryFont';
+        color: var(--bleuVert);
+        @include media-max("desktop-up"){
+          font-size: 2rem;
+        }
+      }
+
+    }
+    
+  }
+  .right{
+    flex-basis: calc(100%/2);
+    margin-left: 5vw;
+    p{
+      height: 40%;
+      padding:0 2vw;
+      font-family: 'secondaryFont';
+      font-size: 2rem;
+      color: var(--bleuVert);
+      @include media-max("desktop-up"){
+        font-size: 1.5rem;
+      }
+      .primarySpan{
+        font-family: 'primaryFont';
+        margin: 0;
+        padding: 0;
+      }
+      .bonjour{
+        font-size: 4rem;
+        @include media-max("desktop-up"){
+          font-size: 3rem;
+        }
+      }
+      .webTech{
+        font-size: 3rem;
+        @include media-max("desktop-up"){
+          font-size: 2rem;
+        }
+      }
+      .competence{
+        font-size: 4rem;
+        overflow: hidden;
+        @include media-max("desktop-up"){
+          font-size: 3rem;
+        }
+        @include media-max("phone-down"){
+          font-size: 2.5rem;
+        }
+      }
+    }
+    .projetsAcceuilPres{
+      padding: 0 2vw;
+      h2{
+        color: var(--roseChina);
+        font-family: 'primaryFont';
+        font-size: 3rem;
+        margin: 4vh 0 7vh 0;
+        position: relative;
+        @include media-max("desktop-up"){
+          font-size: 2rem;
+        }
+        &::after{
+          position: absolute;
+          background-color: var(--roseChina);
+          width: 40%;
+          height: 2px;
+          margin-left: 0.5vw;
+          content: "";
+          top: 50%; 
+          transform: translateY(-50%);
+        }
+      }
+      .slideshow-container.Dev {
+        position: relative;
+        width: 30vw;
+        .numbertext {
+            color: var(--bleuVert);
+            font-size: 3rem;
+            padding: 8px 12px;
+            position: absolute;
+            font-family:'primaryFont';
+            top: -5vh;
+          }
+        .mySlidesDev {
+            display: none;
+            img{
+              z-index: 3;
+                width: 30vw;
+                border-radius: 15px;
+                @include media-max("phone-down"){
+                  width: 70vw;
+                }
+            }
+        }
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            padding: 16px;
+            color: var(--bleuVert);
+            margin-top: -22px;
+            font-weight: bold;
+            font-size: 40px;
+            @include media-max("desktop-up"){
+              font-size: 25px;
+            }
+            @include media-max("phone-down"){
+              font-size: 20px;
+            }
+        }
+
+        .next {
+            right: -3vw;
+            animation: mouvenext 2s ease infinite ;
+            @include media-max("desktop-up"){
+              right: -4vw;
+            }
+            @include media-max("phone-down"){
+              right: -48vw;
+            }
+        }
+        .prev{
+            left: -3vw;
+            animation: mouvepre 2s ease infinite ;
+            @include media-max("desktop-up"){
+              left: -4vw;
+            }
+            @include media-max("phone-down"){
+              left: -9.5vw;
+            }
+        }
+        @keyframes mouvenext {
+          0%{-webkit-transform: translateX(0);}
+          50% {-webkit-transform: translateX(15px);}
+          100%{-webkit-transform: translateX(0);}
+        }
+
+        //noinspection CssUnknownProperty
+        @keyframes mouvepre {
+            0%{-webkit-transform: translateX(0);}
+            50% {-webkit-transform: translateX(-15px);}
+            100%{-webkit-transform: translateX(0);}
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {opacity: .7}
+            to {opacity: 1}
+        }
+
+    }
+    .slideshow-container.Analyse{
+      display: none;
+      position: relative;
+      width: 30vw;
+    
+      .numbertext {
+          color: var(--bleuVert);
+          font-size: 3rem;
+          padding: 8px 12px;
+          position: absolute;
+          font-family:'primaryFont';
+          top: -5vh;
+        }
+      .mySlidesAnalyse {
+          display: none;
+          .imgcar{
+            z-index: 3;
+            width: 30vw;
+            border-radius: 15px;
+            @include media-max("phone-down"){
+              width: 70vw;
+            }
+          }
+      }
+      .prev, .next {
+          cursor: pointer;
+          position: absolute;
+          top: 50%;
+          padding: 16px;
+          color: var(--bleuVert);
+          margin-top: -22px;
+          font-weight: bold;
+          font-size: 40px;
+          @include media-max("desktop-up"){
+            font-size: 25px;
+          }
+          @include media-max("phone-down"){
+            font-size: 20px;
+          }
+      }
+
+      .next {
+          right: -3vw;
+          animation: mouvenext 2s ease infinite ;
+          @include media-max("desktop-up"){
+            right: -4vw;
+          }
+          @include media-max("phone-down"){
+            right: -48vw;
+          }
+      }
+      .prev{
+          left: -3vw;
+          animation: mouvepre 2s ease infinite ;
+          @include media-max("desktop-up"){
+            left: -4vw;
+          }
+          @include media-max("phone-down"){
+            left: -9.5vw;
+          }  
+      }
+      @keyframes mouvenext {
+        0%{-webkit-transform: translateX(0);}
+        50% {-webkit-transform: translateX(15px);}
+        100%{-webkit-transform: translateX(0);}
+      }
+
+      //noinspection CssUnknownProperty
+      @keyframes mouvepre {
+          0%{-webkit-transform: translateX(0);}
+          50% {-webkit-transform: translateX(-15px);}
+          100%{-webkit-transform: translateX(0);}
+      }
+      .fade {
+          animation-name: fade;
+          animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+          from {opacity: .7}
+          to {opacity: 1}
+      }
+
+  }
+     
+    }
+  }
+}

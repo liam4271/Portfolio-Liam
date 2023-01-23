@@ -1,0 +1,158 @@
+#trailer{
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: var(--bleuVert);
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  z-index: 1000;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 500ms ease;
+  text-align: center;
+.mousseInfos{
+  margin-top: 15px;
+  opacity: 0;
+}
+}
+
+body:hover > #trailer{
+  opacity: 1;
+}
+
+
+
+
+.headerProjets{
+  margin: 10vh 5vw;
+      .slideshow-container{
+          .projet{  
+              
+              display: none;
+              justify-content: center;
+              position: relative;
+              .absol{
+                  position: absolute;
+              }
+              .categorie{
+                  left: 0;
+                  top: 0;
+                  font-size: 2rem;
+                  color: var(--roseChina);
+                  font-family: 'secondaryFont';
+                  font-style: italic;
+                  @include media-max("desktop-up"){
+                    font-size: 1.5rem;
+                  }
+              }
+              .date{
+                  right: 0;
+                  bottom: -10%;
+                  font-size: 2rem;
+                  color: var(--roseChina);
+                  font-family: 'secondaryFont';
+                  font-style: italic;
+                  @include media-max("desktop-up"){
+                    font-size: 1.5rem;
+                  }
+              }
+              .explicationProjet{
+                  width: 50%;
+                  padding: 0 8vw; 
+                  height: 360px;
+                  margin-top: 5vh;
+                  position: relative;
+                  .numero{
+                      font-size: 25rem;
+                      position: absolute;
+                      color: var(--roseChina);
+                      top: -18%;
+                      left: 8vw;
+                      font-family: 'primaryFont'; 
+                      @include media-max("desktop-up"){
+                        font-size: 20rem;
+                        top: 22%;
+                      }
+                  }
+                  h1{
+                      font-size: 5rem;
+                      font-family: 'primaryFont';
+                      color: var(--bleuVert);
+                      position: relative;
+                      @include media-max("desktop-up"){
+                        font-size: 4rem;
+                      }
+                  
+                  }
+                  p{
+                      color: var(--bleuVert);
+                      font-family: 'secondaryFont';
+                      font-size: 2.5rem;
+                      position: relative;
+                      @include media-max("desktop-up"){
+                        font-size: 1rem;
+                      }
+                  }
+                  a{
+                    text-decoration: none;
+                    display: flex;
+                    margin-top: 4vh;
+                    justify-content: center;
+                      p{
+                        font-size: 2rem;
+                        font-family: 'secondaryFont';
+                        color: var(--roseChina);
+                      }
+                      .imgBtnFleche{
+                        margin-top: 0.6vh;
+                        width: 3.5%;
+                        margin-left: 0.5vw;
+                      }
+                      
+                    }
+                  }
+                 
+              }
+              a{
+                .imgProjet{
+                  margin-top: 5vh;
+                  width: 40vw;
+                }
+              }
+              
+          }
+      }
+  
+  .commande{
+      margin-top: 10vh;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      .avancement{
+          display: flex ;
+          gap: 20px;
+          .rond{
+              width: 20px;
+              height: 20px;
+              background-color: var(--bleuVert);
+              border-radius: 50%;
+          }
+      }
+      .nextPrevious{
+          font-family: 'primaryFont';
+          font-size: 8rem;
+          display: flex;
+          gap: 200px;
+          color: var(--bleuVert);
+          @include media-max("desktop-up"){
+            font-size: 6rem;
+          }
+          .next:hover{
+              color: var(--roseChina);
+          }
+          .prev:hover{
+              color: var(--roseChina);
+          }
+      }
+  }

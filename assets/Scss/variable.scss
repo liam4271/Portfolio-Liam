@@ -1,0 +1,32 @@
+:root {
+    --beige: #FEFBE8;
+    --noirFoncee : #020202 ;
+    --noirClair : #2A2B2A ;
+    --roseChina : #e36396 ;
+    --bleuVert : #2A66AC ;
+}
+
+$beige : #FEFBE8;
+$noirFoncee : #020202 ;
+$noirClair : #2A2B2A ;
+$roseChina : #e36396 ;
+$bleuVert : #2A66AC ;
+
+@font-face { font-family: primaryFont ; src: url(../police/Jaapokki-Regular.otf); }
+@font-face { font-family: secondaryFont ; src: url(../police/SpaceGrotesk-Medium.otf); }
+
+$breakpoints:(
+    "phone-down":500px,
+    "tablet-up":768px,
+    "tablet-down":970px,
+    "desktop-up":1280px,
+    "desktop-down":1380px,
+    "widescreen-up":1440px,
+
+);
+
+@mixin media-max($_key){
+    @media screen and (max-width: map-get($breakpoints, $_key)) {
+        &{ @content;}
+    }
+}

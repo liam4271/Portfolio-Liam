@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liam Desrayaud - Developpeur Web</title>
+    <link rel="stylesheet" href="assets\Css\Style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets\favicon\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets\favicon\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets\favicon\favicon-16x16.png">
+    <link rel="manifest" href="assets\favicon\site.webmanifest">
+</head>
+<body>
+    <div id="trailer">
+      <img class="mousseInfos" src="assets\media\img\liens-trailler.png" alt="">
+    </div>
+
+      <nav>
+        <div class="firstNavigation element">
+          <a href="index.html">Accueil</a>
+          <a href="A-propos.html">A propos</a>
+          <a href="projets.html">Projets</a>
+          <button class="darkModeBtn">
+            <img class="iconsSoleilLune" src="assets\media\img\croissant-de-lune.png" alt="">
+          </button>
+          
+        </div>
+        <div class="socialMedia element">
+          <a href="">
+            <img  id="linkedin" src="assets\media\img\linkedin.png" alt="">
+          </a>
+        </div>
+        <div class="contact element">
+          <a href="">Contact</a>  
+        </div>
+      </nav>
+    <header class="headerAcceuil">
+      <div class="left">
+        <img id="imgLiamFontPerso" src="assets\media\img\liamFontPerso.png" alt="">
+        <p>Spécialités</p>
+        <h1 id="devWebHome"> <span class="surlignage">Developpement Web</span></h1>
+        <h2 id="analyseHome"> <span class="surlignage">Analyse de données</span></h2>
+        <div class="contenaireDefilementTexte">
+          <marquee width="100%" scrollamount="10">Actuellement en recherche de stage</marquee>
+        </div>
+      </div>
+      
+      <div class="right">
+        <p>
+          <span class="primarySpan bonjour">Bonjour,</span> <br>Je suis un étudiant en deuxième année d'un <span class="primarySpan webTech">bachelor <br> Web et Technologie.</span> <br> Mes principales compétences dans ce secteur sont :<br><span class="primarySpan competence">Html, Css, Javascript et Wordpress.</span>
+        </p>
+        <div class="projetsAcceuilPres">
+          <h2>Voir les projets</h2>
+          
+          <div class="slideshow-container Dev">
+            <div class="mySlidesDev fade">
+              <div class="numbertext">01</div>
+              <a href="projet-LaetitiaPavesi.html"><img class="imgcar" src="assets\media\img\LaetitiaProjet.png" alt="Exemple site web Laetitia Pavesi"></a>
+            </div>
+
+            <div class="mySlidesDev fade">
+              <div class="numbertext">02</div>
+              <a href="projet-TrackAndSave.html"><img class="imgcar" src="assets\media\img\exemple1.png" alt="Exemple site web Track and save"></a>
+            </div>
+
+            <div class="mySlidesDev fade">
+              <div class="numbertext">03</div>
+              <a href="projet-Ecoshifting.html"><img class="imgcar" src="assets\media\img\ecoshifting.png" alt="Exemple site web Ecoshifting"></a>
+            </div>
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+
+          <div class="slideshow-container Analyse">
+            <div class="mySlidesAnalyse fade">
+              <div class="numbertext">01</div>
+              <a href="projet-OutilsStatistique.html"><img class="imgcar" src="assets\media\img\ExempleKubi.png" alt="Exemple de rapport Google data studio"></a>
+            </div>
+
+            <div class="mySlidesAnalyse fade">
+              <div class="numbertext">02</div>
+              <a href="projet-Fiverr.html"><img class="imgcar" src="assets\media\img\exempleFiverr.png" alt="Profil fiverr Liam desrayaud"></a>
+            </div>
+
+            <a class="prev" onclick="plusSlidesAnalyse(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlidesAnalyse(1)">&#10095;</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <script src="assets\script\app.js"></script>
+    <script src="assets\script\acceuil.js"></script>
+</body>
+</html>
