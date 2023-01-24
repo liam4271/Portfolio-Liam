@@ -26,32 +26,33 @@ console.log('%cliam.desrayaud@next-u.fr', "color:#FEFBE8; background-color:#2A66
 
 // animation dark mode
 document.querySelector(".darkModeBtn").addEventListener("click", function(){
-    chiffre++
-    if(chiffre%2 == 0)
-    {
-      document.documentElement.style.setProperty("--beige", "#FEFBE8");
-      document.documentElement.style.setProperty("--bleuVert", "#2A66AC");
-      linkedin.style.backgroundColor = "#2A66AC";
-      iconsSoleilLune.src="assets/media/img/croissant-de-lune.png"
-      liamFontperso.src="assets/media/img/liamFontPerso.png"
-      
-     
-    }
-    else
-    {
-      document.documentElement.style.setProperty("--beige", "#2A2B2A");
-      document.documentElement.style.setProperty("--bleuVert", "#FEFBE8");
-      document.querySelector('body').style.backgroundColor = "#020202";
-      linkedin.style.backgroundColor = "#e36396";
-      iconsSoleilLune.src="assets/media/img/soleil.png"
-      liamFontperso.src="assets/media/img/liamFontPersoBeige.png";
-      
-      
+  chiffre++
+  if(chiffre%2 == 0)
+  {
+    document.documentElement.style.setProperty("--beige", "#FEFBE8");
+    document.documentElement.style.setProperty("--bleuVert", "#2A66AC");
+    linkedin.style.backgroundColor = "#2A66AC";
+    iconsSoleilLune.src="assets/media/img/croissant-de-lune.png"
+    liamFontperso.src="assets/media/img/liamFontPerso.png"
+    
+   
+  }
+  else
+  {
+    document.documentElement.style.setProperty("--beige", "#2A2B2A");
+    document.documentElement.style.setProperty("--bleuVert", "#FEFBE8");
+    document.querySelector('body').style.backgroundColor = "#020202";
+    linkedin.style.backgroundColor = "#e36396";
+    iconsSoleilLune.src="assets/media/img/soleil.png"
+    liamFontperso.src="assets/media/img/liamFontPersoBeige.png";
+    
+    
 
 
-    }
+  }
 
 })
+
 
 
 

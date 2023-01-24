@@ -28,10 +28,12 @@ body:hover > #trailer{
   margin: 10vh 5vw;
       .slideshow-container{
           .projet{  
-              
-              display: none;
+              display: flex;
               justify-content: center;
               position: relative;
+              @include media-max("tablet-up"){
+                display: block;
+              }
               .absol{
                   position: absolute;
               }
@@ -44,6 +46,9 @@ body:hover > #trailer{
                   font-style: italic;
                   @include media-max("desktop-up"){
                     font-size: 1.5rem;
+                  }
+                  @include media-max("tablet-up"){
+                    top: -50px;
                   }
               }
               .date{
@@ -63,6 +68,10 @@ body:hover > #trailer{
                   height: 360px;
                   margin-top: 5vh;
                   position: relative;
+                  @include media-max("tablet-up"){
+                    padding: none; 
+                    width: 100%;
+                  }
                   .numero{
                       font-size: 25rem;
                       position: absolute;
@@ -72,7 +81,7 @@ body:hover > #trailer{
                       font-family: 'primaryFont'; 
                       @include media-max("desktop-up"){
                         font-size: 20rem;
-                        top: 22%;
+                        top:  -12%;
                       }
                   }
                   h1{
@@ -91,7 +100,7 @@ body:hover > #trailer{
                       font-size: 2.5rem;
                       position: relative;
                       @include media-max("desktop-up"){
-                        font-size: 1rem;
+                        font-size: 1.5rem;
                       }
                   }
                   a{
@@ -106,7 +115,7 @@ body:hover > #trailer{
                       }
                       .imgBtnFleche{
                         margin-top: 0.6vh;
-                        width: 3.5%;
+                        width:15px;
                         margin-left: 0.5vw;
                       }
                       
@@ -118,6 +127,10 @@ body:hover > #trailer{
                 .imgProjet{
                   margin-top: 5vh;
                   width: 40vw;
+                  @include media-max("tablet-up"){
+                     
+                    width: 100%;
+                  }
                 }
               }
               
@@ -129,9 +142,17 @@ body:hover > #trailer{
       display: flex;
       justify-content: space-around;
       align-items: center;
+      @include media-max("tablet-up"){
+        display: block;
+        text-align: center;
+      }
       .avancement{
           display: flex ;
           gap: 20px;
+          @include media-max("tablet-up"){
+            gap: 10px;
+            justify-content: center;
+          }
           .rond{
               width: 20px;
               height: 20px;
@@ -147,6 +168,9 @@ body:hover > #trailer{
           color: var(--bleuVert);
           @include media-max("desktop-up"){
             font-size: 6rem;
+          }
+          @include media-max("tablet-up"){
+            display: inline-block;
           }
           .next:hover{
               color: var(--roseChina);

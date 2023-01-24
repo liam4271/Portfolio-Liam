@@ -1,7 +1,7 @@
 :root {
   --beige: #FEFBE8;
   --noirFoncee: #020202 ;
-  --noirClair: #2A2B2A ;
+  --noirClair: #292b29 ;
   --roseChina: #e36396 ;
   --bleuVert: #2A66AC ;
 }
@@ -23,7 +23,7 @@
 body {
   width: 100vw;
   height: 100vh;
-  background-color: var(--beige);
+  background-color: var(--beige) !important;
   overflow: hidden;
 }
 @media screen and (max-width: 970px) {
@@ -47,12 +47,22 @@ nav .element {
   padding: 2.5rem 0;
   margin: 0 8rem;
 }
+@media screen and (max-width: 1280px) {
+  nav .element {
+    padding: 1.6rem 0;
+  }
+}
 nav .firstNavigation {
   width: 50%;
   font-size: 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 1280px) {
+  nav .firstNavigation {
+    font-size: 1.5rem;
+  }
 }
 nav .firstNavigation a {
   text-decoration: none;
@@ -75,6 +85,12 @@ nav .socialMedia {
   border-left: 0.3rem solid var(--bleuVert);
   border-right: 0.3rem solid var(--bleuVert);
   width: 25%;
+  height: 87px;
+}
+@media screen and (max-width: 1280px) {
+  nav .socialMedia {
+    height: 67px;
+  }
 }
 nav .socialMedia img {
   background-color: #2A66AC;
@@ -84,11 +100,21 @@ nav .socialMedia img {
 nav .socialMedia img:hover {
   background-color: var(--roseChina);
 }
+@media screen and (max-width: 1280px) {
+  nav .socialMedia img {
+    width: 20%;
+  }
+}
 nav .contact {
   border: none;
   font-size: 2rem;
   width: 25%;
   position: relative;
+}
+@media screen and (max-width: 1280px) {
+  nav .contact {
+    font-size: 1.5rem;
+  }
 }
 nav .contact a {
   top: 50%;
@@ -898,6 +924,11 @@ body:hover > #trailer {
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
 }
+@media screen and (max-width: 768px) {
+  .projetTemplate {
+    display: block;
+  }
+}
 .projetTemplate .explicationProjet {
   grid-column: 1;
   grid-row: 1;
@@ -932,6 +963,11 @@ body:hover > #trailer {
     font-size: 1.5rem;
   }
 }
+@media screen and (max-width: 768px) {
+  .projetTemplate .explicationProjet .textExplicationProjet .paragraphe {
+    font-size: 1.3rem;
+  }
+}
 .projetTemplate .explicationProjet .textExplicationProjet .pdate {
   display: flex;
   justify-content: flex-end;
@@ -946,6 +982,11 @@ body:hover > #trailer {
 }
 .projetTemplate .imgProjet img {
   width: 90%;
+}
+@media screen and (max-width: 768px) {
+  .projetTemplate .imgProjet {
+    margin: 10vw 0 5vw 0;
+  }
 }
 .projetTemplate .arrowDown {
   grid-column: 1;
@@ -963,6 +1004,12 @@ body:hover > #trailer {
   font-size: 2rem;
   color: var(--beige);
 }
+@media screen and (max-width: 768px) {
+  .projetTemplate .arrowDown .btnplusProjet {
+    border-radius: 2vw;
+    padding: 2vw;
+  }
+}
 .projetTemplate .techProjet {
   grid-column: 2;
   grid-row: 2;
@@ -971,6 +1018,11 @@ body:hover > #trailer {
 }
 .projetTemplate .techProjet .explicationTechProjet {
   width: 70%;
+}
+@media screen and (max-width: 768px) {
+  .projetTemplate .techProjet .explicationTechProjet {
+    margin: 5vh 5vw 0 5vw;
+  }
 }
 .projetTemplate .techProjet .explicationTechProjet h1 {
   font-size: 4rem;
@@ -1023,9 +1075,14 @@ body:hover > #trailer {
   margin: 10vh 5vw;
 }
 .headerProjets .slideshow-container .projet {
-  display: none;
+  display: flex;
   justify-content: center;
   position: relative;
+}
+@media screen and (max-width: 768px) {
+  .headerProjets .slideshow-container .projet {
+    display: block;
+  }
 }
 .headerProjets .slideshow-container .projet .absol {
   position: absolute;
@@ -1041,6 +1098,11 @@ body:hover > #trailer {
 @media screen and (max-width: 1280px) {
   .headerProjets .slideshow-container .projet .categorie {
     font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .headerProjets .slideshow-container .projet .categorie {
+    top: -50px;
   }
 }
 .headerProjets .slideshow-container .projet .date {
@@ -1063,6 +1125,12 @@ body:hover > #trailer {
   margin-top: 5vh;
   position: relative;
 }
+@media screen and (max-width: 768px) {
+  .headerProjets .slideshow-container .projet .explicationProjet {
+    padding: none;
+    width: 100%;
+  }
+}
 .headerProjets .slideshow-container .projet .explicationProjet .numero {
   font-size: 25rem;
   position: absolute;
@@ -1074,7 +1142,7 @@ body:hover > #trailer {
 @media screen and (max-width: 1280px) {
   .headerProjets .slideshow-container .projet .explicationProjet .numero {
     font-size: 20rem;
-    top: 22%;
+    top: -12%;
   }
 }
 .headerProjets .slideshow-container .projet .explicationProjet h1 {
@@ -1096,7 +1164,7 @@ body:hover > #trailer {
 }
 @media screen and (max-width: 1280px) {
   .headerProjets .slideshow-container .projet .explicationProjet p {
-    font-size: 1rem;
+    font-size: 1.5rem;
   }
 }
 .headerProjets .slideshow-container .projet .explicationProjet a {
@@ -1112,12 +1180,17 @@ body:hover > #trailer {
 }
 .headerProjets .slideshow-container .projet .explicationProjet a .imgBtnFleche {
   margin-top: 0.6vh;
-  width: 3.5%;
+  width: 15px;
   margin-left: 0.5vw;
 }
 .headerProjets .slideshow-container a .imgProjet {
   margin-top: 5vh;
   width: 40vw;
+}
+@media screen and (max-width: 768px) {
+  .headerProjets .slideshow-container a .imgProjet {
+    width: 100%;
+  }
 }
 
 .commande {
@@ -1126,9 +1199,21 @@ body:hover > #trailer {
   justify-content: space-around;
   align-items: center;
 }
+@media screen and (max-width: 768px) {
+  .commande {
+    display: block;
+    text-align: center;
+  }
+}
 .commande .avancement {
   display: flex;
   gap: 20px;
+}
+@media screen and (max-width: 768px) {
+  .commande .avancement {
+    gap: 10px;
+    justify-content: center;
+  }
 }
 .commande .avancement .rond {
   width: 20px;
@@ -1146,6 +1231,11 @@ body:hover > #trailer {
 @media screen and (max-width: 1280px) {
   .commande .nextPrevious {
     font-size: 6rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .commande .nextPrevious {
+    display: inline-block;
   }
 }
 .commande .nextPrevious .next:hover {

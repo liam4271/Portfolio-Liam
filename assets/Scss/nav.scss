@@ -5,6 +5,9 @@ nav{
     .element{
       padding: 2.5rem 0;
       margin: 0 8rem;
+      @include media-max("desktop-up"){
+        padding: 1.6rem 0;
+      }
     }
     .firstNavigation{
       width: 50%;
@@ -12,6 +15,9 @@ nav{
       display: flex;
       justify-content: space-between;
       align-items: center;
+      @include media-max("desktop-up"){
+        font-size: 1.5rem;
+      }
       a{
         text-decoration: none;
         color: var(--bleuVert);
@@ -34,6 +40,10 @@ nav{
       border-left: 0.3rem solid var(--bleuVert);
       border-right: 0.3rem solid var(--bleuVert);
       width: 25%;
+      height: 87px;
+      @include media-max("desktop-up"){
+        height: 67px;
+      }
       img{
         background-color: #2A66AC;
         width: 10%;
@@ -41,7 +51,9 @@ nav{
         &:hover{
           background-color: var(--roseChina);
         }
-        
+        @include media-max("desktop-up"){
+          width: 20%;
+        }
       }
     }
     .contact{
@@ -49,6 +61,9 @@ nav{
       font-size: 2rem;
       width: 25%;
       position: relative;
+      @include media-max("desktop-up"){
+        font-size: 1.5rem;
+      }
       a{
         top: 50%; 
         transform: translateY(-50%);

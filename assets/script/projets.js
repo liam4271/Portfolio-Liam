@@ -4,6 +4,8 @@ let rond2 = document.querySelector(".rond.two")
 let rond3 = document.querySelector(".rond.three")
 let rond4 = document.querySelector(".rond.four")
 let rond5 = document.querySelector(".rond.five")
+let mq = window.matchMedia("(max-width: 768px)");
+
 
 
 
@@ -21,7 +23,7 @@ function showSlides(n) {
   let i;
   let z;
   let rond = document.querySelector(".rond")
-  let slides = document.getElementsByClassName("projet");
+  let slides = document.getElementsByClassName("projet fade");
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   switch (n) {
@@ -71,13 +73,27 @@ function showSlides(n) {
     default:
       break;
   }
+
   for (i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
-    
   }
   slides[slideIndex-1].style.display = "flex";
- 
+  window.addEventListener("resize", function() {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "block";
+    } else {
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex-1].style.display = "flex";
+    }
+  });  
 }
+
+
 
 // trailer de la souris
 
